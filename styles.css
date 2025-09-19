@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+/* variables */
+:root{
+  --primary: cornsilk;
+  --secondary: antiquewhite;;
+}
+
+/* reset */
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+/* base styles */
+body{
+  background: var(--primary);
+  font-family: 'Noto Serif', serif;
+}
+.button{
+  background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.button:hover{
+  color: blue;
+  background: white;
+}
+input,textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* fonts */
+h1 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 0.8em;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+h4 {
+    font: 1em;
+}
+p {
+    font-size: 0.9em;
+    color: gray;
+}
+
+p, h4 {
+    line-height: 2em;
+}
+
+/* mobile styles */
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.navbar {
+    margin: 0 10px;
+    height: 100px;
+    min-height: 100px;
+    align-items: center;
+}
+
+.navbar h1 {
+    grid-column: span 3;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    padding: 50% auto;
+}
+
+.navbar ul {
+ display: none;
+}
+
+
+#search-section {
+    margin: 0 10px;
+    padding: 5px auto;
+}
+
+#search-section h2 {
+    padding: 5px 0 5px 2px;
+}
+
+.search-container input {
+  grid-column: 1 / 6;
+} 
+
+.search-container button {
+  grid-column: 6 / 7;
+}
+
+#article {
+    margin: 20px 10px;
+    padding: 5px auto;
+}
+
+
+#article h2 {
+  padding: 10px 0 0 10px;
+}
+
+.article-container {
+margin: 10px 0;
+}
+
+#article h3 {
+    padding: 5px 0 5px 2px;
+}
+
+.featured-article {
+    grid-column: 1 / 7;
+    max-height: 180px;
+    height: 180px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px auto 50px auto;
+    position: static;
+}
+
+.featured-article p {
+    background-color: tan;
+    padding: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    grid-column: 1 / 2;
+}
+
+.article-date {
+    background-color: tan;
+    font-size: 0.6em;
+     width: 45%;
+  max-width: 45%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.featured-article div {
+    width: 95%;
+    max-width: 95%;
+    height: 170px;
+    max-height: 170px;
+    background-color: lightgray;
+    margin: 55px auto;
+    border-radius: 5px;
+    position: relative;
+     overflow: visible;
+}
+
+.featured-article div:nth-child(1) {
+    margin-top: 0;
+}
+
+
+.featured-article div h3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: -10px;
+  padding: 5px;
+  width: 50%;
+  max-width: 50%;
+ font-size: 0.6em;
+}
+
+.featured-article div h4 {
+    padding: 30px 10px 0 10px;
+    font-size: 0.8em;
+}
+
+.featured-article div p {
+    font-size: 0.7em;
+    /* background-color: blue; */
+    line-height: 1.5em;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+.link {
+    width: 45px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    padding: 5px;
+    margin: 10px 0 10px 5px;
+    font-size: 0.5em;
+    display: block;
+}
+
+
+#footer-section {
+    background-color: var(--secondary);
+    color: white;
+    padding: 20px 10px;
+  margin: 30px auto;
+}
+
+
+#footer-section P {
+  padding: 50px auto 0 auto;
+  line-height: 1.2em;
+  font-size: 0.8em;
+
+}
+
+.footerImage-container {
+  margin: 10px 0;
+  width: 80%;
+  max-width: 80%;
+}
+
+.footerImage-container img {
+    width: 30px;
+    height: 30px;
+    /* grid-column: span 1; */
+    margin: 0 10px;
+}
+
+#footer-section h4 {
+  color: black;
+}
+
+.footer-endnote {
+  padding: 20px 5px;
+}
